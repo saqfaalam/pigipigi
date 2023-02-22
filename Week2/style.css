@@ -1,0 +1,166 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #dddddd40;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: calc(100vw - 16px);
+  margin-right: auto;
+  z-index: 5;
+  padding: 0px;
+}
+
+.container {
+  margin: 0px;
+}
+
+.container-fluid {
+  background-color: black;
+  opacity: 0.5;
+  padding: 0px;
+}
+
+.navbar-brand {
+  margin-left: 15px;
+  color: #12ce31;
+}
+
+.row {
+  float: right;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.col-sm {
+  color: white;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.153), rgba(0, 0, 0, 0.107)),
+    url("foto/pantai.png");
+  width: 100vw;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0px;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* popular */
+.popular {
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-left: 30px;
+}
+
+#cover {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+#cover img {
+  width: 45%;
+  margin: 1.66%;
+  flex: 1;
+}
+
+/* gallery */
+
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.box-container .box {
+  height: 15rem;
+  width: 20rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  flex: 25%;
+}
+
+.box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box-container .box:hover img {
+  transform: scale(1.2);
+}
+
+/* news */
+.new-container {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  padding: 20px 20px;
+}
+
+.konten {
+  display: flex;
+  flex: 1;
+  gap: 50px;
+}
+
+/* footer */
+.footer {
+  padding: 20px 20px 20px 20px;
+  justify-content: space-around;
+  color: white;
+  display: flex;
+  background-color: black;
+  text-align: center;
+}
+
+.isi {
+  color: #dddddd40;
+  text-align: start;
+}
+
+/* responsif */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home {
+    padding: 1rem 4rem;
+  }
+}
